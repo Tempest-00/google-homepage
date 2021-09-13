@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+        *{
+            font-size: 13px;
+            font-family: arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #333333;
+        }
+        a:hover{
+            font-size: 14px;
+            color:dimgray;
+        }
+        input:focus, textarea:focus, select:focus{
+            outline: none;
+        }
+        .navbar {
+            margin: 10px 10px;
+        }
+        ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0; 
+        }
+        .navbarleft{
+            float: left;
+            padding: 20px 10px;
+        }
+        .navbarright{
+            float: right;
+            padding: 20px 10px;
+        }
+        .btn-1{
+            background-color: rgb(75, 75, 255);
+            color: white;
+            border-radius: 20px;
+            border-style: none;
+            padding: 12px 18px;
+            margin: 12px 8px;
+            float: right;
+        }
+        .logo {
+            margin-top: 100px ;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            height: auto;
+            width: auto;
+        }
+
+        .search-bar {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+            width: 500px;
+            border-radius: 18px;
+            border-width: 1px;
+            border-color: silver;
+            border-style: solid;
+        }
+        .search-icon{
+            color: grey;
+            margin-left: 40px;
+        }
+        .text-field{
+            background-color: white;
+            border-radius: 18px;
+            border-style: none;
+            width: 420px;
+            height: 30px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .mic{
+            height: 22px;
+            margin-right: 40px;
+        }
+        .btns-2{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button{
+            border-style: none;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 1% 2%;
+        }
+        footer{
+            color: rgb(87, 86, 86);
+            background-color: silver;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            width: 100%;
+            padding: 5px;
+        }
+        footer p{
+            font-size: 14px;
+        }
+        footer ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        footer li{
+            font-size: 14px;
+            padding: 5px 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <ul class="navbar">
+       <li class="navbarleft"><a href="#">About</a></li>
+       <li class="navbarleft"><a href="#">Store</a></li>
+       <li><a href="#"><button class="btn-1">Sign in</button></a></li>
+        <li class="navbarright"><a href="#"><img src="menu.png" height="20px"; width="20px"; padding: 20px;> </a></li>
+       <li class="navbarright"><a href="#">Images</a></li>
+       <li class="navbarright"><a href="#">Gmail</a></li> 
+    </ul>
+ 
+    <br>
+
+<div class="logo">
+    <img class="hero-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</div>
+
+<div class="search-container">
+    <form action="search" method="GET" role="search">
+    <div>
+        <div class="search-bar">
+           <img class="search-icon" src="search-i.svg"></img>
+            <div class="search-field">
+               <input class="text-field" type="text"></input>
+            </div>
+        <img  class="mic" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg" alt="mic">
+        </div>
+        <div class="btns-2">
+            <button class="button">Google Search</button>
+            <button class="button">Jesus Take the Wheel</button>
+        </div>
+    </div>
+    </form>
+</div>
+<footer>
+    <p style="padding: 0 0 8px 0;">We promise we aren't killing earth! :)</p>
+    <div>
+        <ul>
+            <li>Advertising</li>
+            <li>Business</li>
+            <li style="padding-right: 150px;">How Search Works</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
